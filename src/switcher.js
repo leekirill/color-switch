@@ -15,10 +15,13 @@ const switcher = {
     this.intervalId = setInterval(() => {
       refs.body.style.backgroundColor = colors[randomizer(1, colors.length - 1)];
     }, 1000);
+
+    refs.startBtn.setAttribute('disabled', '');
   },
   stop() {
     clearInterval(this.intervalId);
     this.isActive = false;
+    refs.startBtn.removeAttribute('disabled');
   },
 };
 
