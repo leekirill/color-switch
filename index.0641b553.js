@@ -614,9 +614,10 @@ const switcher = {
 },{"./colors":"bSpa4","./randomizer":"isfnv","./refs":"ep9VC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isfnv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-exports.default = randomIntegerFromInterval = (min, max)=>{
+function randomIntegerFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-};
+}
+exports.default = randomIntegerFromInterval;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ep9VC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
