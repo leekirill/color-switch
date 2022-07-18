@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;;;AAOA","sources":["src/css/styles.css"],"sourcesContent":[".container {\n    display: inline-block;\n    position: relative;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n}\nbutton:hover {\n    cursor: pointer;\n}"],"names":[],"version":3,"file":"index.77a9bc14.css.map","sourceRoot":"/__parcel_source_root/"}

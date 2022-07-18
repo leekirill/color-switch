@@ -596,10 +596,12 @@ const switcher = {
         this.intervalId = setInterval(()=>{
             (0, _refsDefault.default).body.style.backgroundColor = (0, _colorsDefault.default)[(0, _randomizerDefault.default)(1, (0, _colorsDefault.default).length - 1)];
         }, 1000);
+        (0, _refsDefault.default).startBtn.setAttribute("disabled", "");
     },
     stop () {
         clearInterval(this.intervalId);
         this.isActive = false;
+        (0, _refsDefault.default).startBtn.removeAttribute("disabled");
     }
 };
 (0, _refsDefault.default).startBtn.addEventListener("click", ()=>{

@@ -1,0 +1,32 @@
+.container {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px 30px;
+  transition: all .25s;
+  display: flex;
+}
+
+button:last-child {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #f7f7f7;
+}
+
+button:disabled {
+  pointer-events: none;
+  display: none;
+}
+
+/*# sourceMappingURL=index.e8265c92.css.map */
