@@ -586,7 +586,6 @@ var _colorsDefault = parcelHelpers.interopDefault(_colors);
 var _randomizer = require("./randomizer");
 var _randomizerDefault = parcelHelpers.interopDefault(_randomizer);
 var _refs = require("./refs");
-var _refsDefault = parcelHelpers.interopDefault(_refs);
 const switcher = {
     intervalId: null,
     isActive: false,
@@ -594,20 +593,20 @@ const switcher = {
         if (this.isActive) return;
         this.isActive = true;
         this.intervalId = setInterval(()=>{
-            (0, _refsDefault.default).body.style.backgroundColor = (0, _colorsDefault.default)[(0, _randomizerDefault.default)(1, (0, _colorsDefault.default).length - 1)];
+            (0, _refs.refs).body.style.backgroundColor = (0, _colorsDefault.default)[(0, _randomizerDefault.default)(1, (0, _colorsDefault.default).length - 1)];
         }, 1000);
-        (0, _refsDefault.default).startBtn.setAttribute("disabled", "");
+        (0, _refs.refs).startBtn.setAttribute("disabled", "");
     },
     stop () {
         clearInterval(this.intervalId);
         this.isActive = false;
-        (0, _refsDefault.default).startBtn.removeAttribute("disabled");
+        (0, _refs.refs).startBtn.removeAttribute("disabled");
     }
 };
-(0, _refsDefault.default).startBtn.addEventListener("click", ()=>{
+(0, _refs.refs).startBtn.addEventListener("click", ()=>{
     switcher.start();
 });
-(0, _refsDefault.default).stopBtn.addEventListener("click", ()=>{
+(0, _refs.refs).stopBtn.addEventListener("click", ()=>{
     switcher.stop();
 });
 
@@ -622,7 +621,8 @@ exports.default = randomIntegerFromInterval;
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ep9VC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-exports.default = refs = {
+parcelHelpers.export(exports, "refs", ()=>refs);
+const refs = {
     body: document.querySelector("body"),
     startBtn: document.querySelector('[data-action="start"]'),
     stopBtn: document.querySelector('[data-action="stop"]')
