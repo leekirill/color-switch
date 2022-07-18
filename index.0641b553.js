@@ -537,10 +537,10 @@ var _colors = require("./colors");
 var _colorsDefault = parcelHelpers.interopDefault(_colors);
 var _switcher = require("./switcher");
 
-},{"./colors":"bSpa4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./switcher":"7hicx"}],"bSpa4":[function(require,module,exports) {
+},{"./colors":"bSpa4","./switcher":"7hicx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSpa4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-exports.default = colors = [
+exports.default = [
     "#FFFFFF",
     "#2196F3",
     "#4CAF50",
@@ -611,7 +611,7 @@ const switcher = {
     switcher.stop();
 });
 
-},{"./colors":"bSpa4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./randomizer":"isfnv","./refs":"ep9VC"}],"isfnv":[function(require,module,exports) {
+},{"./colors":"bSpa4","./randomizer":"isfnv","./refs":"ep9VC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isfnv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 exports.default = randomIntegerFromInterval = (min, max)=>{
