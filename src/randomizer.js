@@ -1,3 +1,3 @@
-export default randomIntegerFromInterval = (min, max) => {
+export default function randomIntegerFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
-};
+}

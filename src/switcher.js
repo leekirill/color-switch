@@ -1,6 +1,6 @@
 import colors from './colors';
-import randomizer from './randomizer';
-import refs from './refs';
+import randomIntegerFromInterval from './randomizer';
+import { refs } from './refs';
 
 const switcher = {
   intervalId: null,
@@ -13,7 +13,7 @@ const switcher = {
 
     this.isActive = true;
     this.intervalId = setInterval(() => {
-      refs.body.style.backgroundColor = colors[randomizer(1, colors.length - 1)];
+      refs.body.style.backgroundColor = colors[randomIntegerFromInterval(1, colors.length - 1)];
     }, 1000);
 
     refs.startBtn.setAttribute('disabled', '');
