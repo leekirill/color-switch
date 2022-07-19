@@ -18,7 +18,7 @@ const switcher = {
         'url(' +
         galleryItems.map(e => e.original)[randomIntegerFromInterval(1, galleryItems.length - 1)] +
         ')';
-      refs.body.style.backgroundSize = 'cover';
+      refs.body.style.backgroundSize = 'contain';
     }, 2000);
 
     refs.startBtn.setAttribute('disabled', '');

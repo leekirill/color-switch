@@ -1,23 +1,23 @@
 {
-  "name": "color-switch",
+  "name": "pic-switch",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url /color-switch/",
+    "build": "parcel build index.html --public-url /pic-switch/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leekirill/color-switch.git"
+    "url": "git+https://github.com/leekirill/pic-switch.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leekirill/color-switch/issues"
+    "url": "https://github.com/leekirill/pic-switch/issues"
   },
-  "homepage": "https://leekirill.github.io/color-switch",
+  "homepage": "https://leekirill.github.io/pic-switch",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2"
