@@ -1,5 +1,6 @@
 import colors from './colors';
 import randomIntegerFromInterval from './randomizer';
+import galleryItems from './images/gallery-items';
 import { refs } from './refs';
 
 const switcher = {
@@ -13,8 +14,12 @@ const switcher = {
 
     this.isActive = true;
     this.intervalId = setInterval(() => {
-      refs.body.style.backgroundColor = colors[randomIntegerFromInterval(1, colors.length - 1)];
-    }, 1000);
+      refs.body.style.backgroundImage =
+        'url(' +
+        galleryItems.map(e => e.original)[randomIntegerFromInterval(1, galleryItems.length - 1)] +
+        ')';
+      refs.body.style.backgroundSize = 'cover';
+    }, 2000);
 
     refs.startBtn.setAttribute('disabled', '');
   },

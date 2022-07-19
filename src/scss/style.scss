@@ -1,6 +1,6 @@
 body {
     background: #EFEFEF;
-    transition: 250ms;
+    transition: 1000ms;
 }
 .container {
     width: 400px;
@@ -13,7 +13,7 @@ body {
     top: 90%;
     left: 75%;
     transform: translate(-0%, -80%);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 .button__items {
         position: relative;
@@ -43,8 +43,9 @@ button {
             color: #fff;
             box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(56 103 214 / 90%);
             &:hover {
-                color: #000;
+                color: #fff;
                 box-shadow: none;
+                background: #3867d6;
             }
         }
         &:last-child {
@@ -54,10 +55,15 @@ button {
             cursor: pointer;
             background: #f7f7f7;
         }
+
         &:disabled {
             background: #c2d4ff;
             pointer-events: none;
             box-shadow: none
+        }
+
+        &:disabled:hover {
+            color: #fff;
         }
 }
 
