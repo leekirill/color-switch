@@ -1,1 +1,1 @@
-# color-switch
+# pic-switch
