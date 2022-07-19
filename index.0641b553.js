@@ -535,9 +535,11 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _colors = require("./colors");
 var _colorsDefault = parcelHelpers.interopDefault(_colors);
+var _galleryItems = require("./images/gallery-items");
+var _galleryItemsDefault = parcelHelpers.interopDefault(_galleryItems);
 var _switcher = require("./switcher");
 
-},{"./colors":"bSpa4","./switcher":"7hicx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSpa4":[function(require,module,exports) {
+},{"./colors":"bSpa4","./images/gallery-items":"16tWF","./switcher":"7hicx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSpa4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 exports.default = [
@@ -579,12 +581,291 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"7hicx":[function(require,module,exports) {
+},{}],"16tWF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = [
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg",
+        description: "Hokkaido Flower"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
+        description: "Container Haulage Freight"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
+        description: "Aerial Beach View"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
+        description: "Flower Blooms"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
+        description: "Alpine Mountains"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
+        description: "Mountain Lake Sailing"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+        description: "Alpine Spring Meadows"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+        description: "Nature Landscape"
+    },
+    {
+        preview: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        original: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+        description: "Lighthouse Coast Sea"
+    },
+    ``, 
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7hicx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _colors = require("./colors");
 var _colorsDefault = parcelHelpers.interopDefault(_colors);
 var _randomizer = require("./randomizer");
 var _randomizerDefault = parcelHelpers.interopDefault(_randomizer);
+var _galleryItems = require("./images/gallery-items");
+var _galleryItemsDefault = parcelHelpers.interopDefault(_galleryItems);
 var _refs = require("./refs");
 const switcher = {
     intervalId: null,
@@ -593,8 +874,9 @@ const switcher = {
         if (this.isActive) return;
         this.isActive = true;
         this.intervalId = setInterval(()=>{
-            (0, _refs.refs).body.style.backgroundColor = (0, _colorsDefault.default)[(0, _randomizerDefault.default)(1, (0, _colorsDefault.default).length - 1)];
-        }, 1000);
+            (0, _refs.refs).body.style.backgroundImage = "url(" + (0, _galleryItemsDefault.default).map((e)=>e.original)[(0, _randomizerDefault.default)(1, (0, _galleryItemsDefault.default).length - 1)] + ")";
+            (0, _refs.refs).body.style.backgroundSize = "cover";
+        }, 2000);
         (0, _refs.refs).startBtn.setAttribute("disabled", "");
     },
     stop () {
@@ -610,7 +892,7 @@ const switcher = {
     switcher.stop();
 });
 
-},{"./colors":"bSpa4","./randomizer":"isfnv","./refs":"ep9VC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isfnv":[function(require,module,exports) {
+},{"./colors":"bSpa4","./randomizer":"isfnv","./images/gallery-items":"16tWF","./refs":"ep9VC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isfnv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 function randomIntegerFromInterval(min, max) {
@@ -628,6 +910,6 @@ const refs = {
     stopBtn: document.querySelector('[data-action="stop"]')
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7Aums","bNKaB"], "bNKaB", "parcelRequirec321")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7Aums","bNKaB"], "bNKaB", "parcelRequire4e8b")
 
 //# sourceMappingURL=index.0641b553.js.map
